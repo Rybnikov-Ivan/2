@@ -3,9 +3,11 @@ package com.example2.service.impl;
 import com.example2.model.Participant;
 import com.example2.model.Promotion;
 import com.example2.service.ParticipantService;
+import org.springframework.stereotype.Service;
 
 import static com.example2.service.impl.PromotionServiceImpl.PROMOTION_LIST;
 
+@Service
 public class ParticipantServiceImpl implements ParticipantService {
     @Override
     public int addParticipantToPromotion(int promoId, Participant participant) {
